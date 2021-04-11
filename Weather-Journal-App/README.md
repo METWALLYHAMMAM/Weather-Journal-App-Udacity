@@ -21,4 +21,4 @@ To get the project up and running I followed these steps:
 
 
 ### Result 
-![About Page]()
+![About Page](https://github.com/metwallyhammam/Weather-Journal-App-Udacity/blob/main/2021-04-11%20(4).png)
