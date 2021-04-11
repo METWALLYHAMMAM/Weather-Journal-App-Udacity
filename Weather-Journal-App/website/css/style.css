@@ -1,0 +1,278 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background:rgb(1, 210, 217);
+  color: rgb(0, 0, 0);
+  font-family:  sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form01 {
+  background: url(../img/Coolum-Beach.jpg) no-repeat center center/ cover;
+  height: 100vh;
+  padding:  3rem;
+  width: 100vw;
+}
+
+#app {
+  align-items: stretch;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-between;
+  margin: 8 auto;
+  text-align: center;
+  width: 30vw;
+}
+
+/* App Heading */
+
+.header1 {
+  background-color: rgba(102, 100, 204, 0.66);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.headline__heading {
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 951px) {
+  .header02 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Form */
+
+.mainapp {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  min-height: 50%;
+  width: 70%;
+}
+
+
+.mainapp div label {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.6rem;
+  left: 2rem;
+  position: absolute;
+  top: 2rem;
+  transition: 0.5s;
+}
+.image  {
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.6rem;
+  left: 20rem;
+  position: right;
+  top: 2rem;
+  transition: 0.5s;
+}
+
+#app input:focus ~ label,
+#app textarea:focus ~ label,
+#app input:valid ~ label,
+#app textarea:valid ~ label {
+  font-size: 1.3rem;
+  transform: translateY(-1rem);
+}
+
+#app input:focus,
+#app textarea:focus {
+  border: 0.2rem solid rgb(24, 19, 18);
+}
+
+/* ZIP & feelings input */
+
+#zip,
+#feelings {
+  background: rgba(147, 123, 230, 0.79);
+  border: 0.2rem solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  color: rgba(141, 40, 210, 0.73);
+  display: block;
+  font-size: 2rem;
+  height: 1rem;
+  text-align: center;
+  width: 75%;
+}
+
+.zip {
+  position: relative;
+  width: 100%;
+}
+
+#zip {
+  padding: 1.5rem 1rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#zip:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgba(14, 119, 230, 0.65);
+  transition: all 5s ease-in-out 0s;
+}
+
+/* Feelings field */
+
+.feel {
+  position: relative;
+  width: 100%;
+}
+
+#feelings {
+  overflow: hidden;
+  padding: 5rem;
+  resize: none;
+}
+
+/* GenerateButton  */
+
+#generatebutt {
+  background: rgba(139, 120, 235, 0.66);
+  border: 0.2rem solid rgb(0, 0, 0);
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 2rem #444;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 5rem;
+  letter-spacing: 0.2rem;
+  margin-top: 3rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  transition: all 0.1s;
+  width: 70%;
+}
+
+@media only screen and (min-width: 701px) {
+  #generatebutt {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 951px) {
+  #generatebutt {
+    font-size: 2.5rem;
+  }
+}
+
+#generatebutt:active {
+  transform: translateY(0);
+}
+
+#generatebutt:hover {
+  transform: translateY(-0.2rem);
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Most recent entry styling */
+
+.entry {
+  background: rgba(59, 74, 107, 0.4);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  color: #f1cccc;
+  font-family:  sans-serif;
+  height: 10rem;
+  text-shadow: 0 0.3rem 1rem rgba(0,0,0,0.7);
+}
+
+.resultform {
+  color: rgba(24, 11, 17, 0.76);
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.9);
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+#entryform001 {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+
+@media only screen and (min-width: 1051px) {
+  #entryform001 {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #entryform001 {
+    justify-content: center;
+  }
+}
+
+.dateform,
+.tempform,
+.mastercontent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.dateform {
+  margin-left: 5rem;
+}
+
+.mastercontent {
+  justify-content: flex-start;
+  flex: 2;
+}
+
+@media only screen and (min-width: 1200px) {
+  .mastercontent {
+    flex: none;
+  }
+}
+
+.iconform {
+  color: rgba(75, 31, 74, 0.6);
+  opacity: 0;
+  padding: 0 0 0 1rem;
+}
+
+#date,
+#temp,
+#content {
+  padding: 0 4rem 0 2rem;
+}
